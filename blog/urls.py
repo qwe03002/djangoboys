@@ -4,4 +4,6 @@ from . import views # .은 현재 내가있는 위치를 말함
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('post/<int:pk>', views.post_detail, name='post_detail'),
+    path('list',views.post_list, name='post_list'),
 ]
